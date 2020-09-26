@@ -1,9 +1,6 @@
 import React,{Component} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Container from '@material-ui/core/Container';
-import SimpleModal from './Modal'
 import imagen from './running.png'
+import './App.css'
 
 class MyApp extends Component{
     constructor(props) {
@@ -47,9 +44,12 @@ class MyApp extends Component{
 
     render(){
         return(
-            <Container maxWidth='xs'>
+            <div className = "App">
+                <div>
+
+                
                 <h1>Ingresa tus datos</h1>
-                <img src={imagen} width='250' height='250'></img>
+                <img src={imagen} width='250' height='250' alt=""></img>
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Nombre:
@@ -68,9 +68,8 @@ class MyApp extends Component{
                     <br/>
                     <input type="submit" value="Enviar" />
                 </form>
-            </Container>
-            
-            
+                </div>
+            </div>
         );
     }
 }
