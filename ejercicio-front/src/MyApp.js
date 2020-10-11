@@ -45,7 +45,7 @@ class MyApp extends Component{
     render(){
         return(
             <div className = "App">
-                <div>
+                <div className="App2">
 
                 
                 <h1>Ingresa tus datos</h1>
